@@ -1,0 +1,14 @@
+def hourglassSum(arr):
+    yeni_dize = []
+    for i in range(len(arr)):
+        for j in range(len(arr[i])):
+            yeni_dize.append(arr[i][j:j+3])
+    ikinci_dize = []
+    for i in range(len(yeni_dize)-13):
+        if len(yeni_dize[i]) == 3:
+            dize = []
+            dize.extend(new_array[i])
+            dize.extend(new_array[i+12])
+            dize.extend(new_array[i+6][1:2])
+            ikinci_dize.append(sum(dize))
+    return max(ikinci_dize)
