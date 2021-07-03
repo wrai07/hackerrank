@@ -1,0 +1,5 @@
+def matchingStrings(strings, queries):
+    sonuc=[]
+    for i in queries:
+        sonuc.append(strings.count(i))
+    return sonuc
